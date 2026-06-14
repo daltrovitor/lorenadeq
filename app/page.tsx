@@ -140,108 +140,124 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-background text-foreground font-sans">
-      {/* Hero Section */}
+      {/* Top Banner Section with foto1.webp background */}
       <section 
-        className="relative overflow-hidden bg-cover bg-center bg-no-repeat text-white min-h-[85vh] flex items-center"
+        className="relative w-full aspect-[16/9] md:h-[450px] bg-cover bg-center bg-no-repeat flex items-center"
         style={{ backgroundImage: "url('/foto1.webp')" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.25_0.04_20)]/95 via-[oklch(0.25_0.04_20)]/80 to-[oklch(0.25_0.04_20)]/30 z-0"></div>
+        {/* Soft gradient overlay to brighten the image while keeping text readable */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.25_0.04_20)]/45 via-[oklch(0.25_0.04_20)]/20 to-transparent z-0"></div>
         
-        <div className="relative z-10 max-w-7xl w-full mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24">
-          <div className="flex justify-center md:justify-start mb-8 md:mb-12">
-            <img src="/logo-branco.webp" alt="Domine a Amamentação" className="h-28 md:h-32 w-auto" width={128} height={128} />
+        {/* Logo container (centered within the left 50% "white part" of the image) */}
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-12 lg:px-16 h-full flex items-center justify-start">
+          <div className="w-[50%] sm:w-[45%] flex flex-col items-center justify-center text-center">
+            <img 
+              src="/logo-branco.webp" 
+              alt="Domine a Amamentação" 
+              className="h-28 sm:h-44 md:h-64 w-auto" 
+              width={270} 
+              height={270} 
+            />
           </div>
+        </div>
+      </section>
 
-          <div className="max-w-2xl text-center md:text-left md:mr-auto">
-            <p className="inline-block font-script text-2xl md:text-3xl text-[oklch(0.95_0.05_25)] mb-4 px-6 py-2 rounded-full border border-white/25 bg-primary/20 backdrop-blur">
-              Para mães que querem viver essa fase com leveza
-            </p>
-            
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] font-medium mb-8 text-white">
-              Construa uma relação tranquila com seu bebê desde os primeiros dias,{" "}
-              <span className="font-script text-[oklch(0.72_0.17_15)] block md:inline">
-                amamentando com confiança e sem dor
-              </span>
-            </h1>
+      {/* Hero Content Section with dark burgundy gradient background */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-[oklch(0.45_0.12_15)] via-[oklch(0.55_0.15_12)] to-[oklch(0.65_0.14_20)] text-white py-16 md:py-24">
+        {/* Decorative background overlay */}
+        <div 
+          className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none" 
+          style={{
+            backgroundImage: "radial-gradient(circle at 20% 30%, oklch(0.9 0.08 25) 0%, transparent 40%), radial-gradient(circle at 80% 70%, oklch(0.7 0.15 10) 0%, transparent 50%)"
+          }}
+        ></div>
+        <div className="relative max-w-4xl mx-auto px-6 text-center">
+          <p className="inline-block font-script text-sm sm:text-xl md:text-3xl text-[oklch(0.95_0.05_25)] text-center leading-relaxed px-6 py-2.5 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-xs shadow-sm mb-6">
+            Para mães que querem viver essa fase com leveza
+          </p>
+          <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.1] font-medium mb-8 text-white">
+            Construa uma relação tranquila com seu bebê desde os primeiros dias,{" "}
+            <span className="font-script text-[oklch(0.95_0.06_25)] block md:inline">
+              amamentando com confiança e sem dor
+            </span>
+          </h1>
 
-            <p className="text-base md:text-lg text-white/85 leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">
-              A maioria das mães chega ao parto sem saber o que esperar das primeiras mamadas. Dias de dor, noites de pouco sono e aquela sensação de culpa de quem acha que está falhando. A boa notícia é que a maioria dessas dificuldades podem ser evitadas com conhecimento adquirido do jeito certo!
-            </p>
+          <p className="text-base md:text-lg text-white/85 leading-relaxed mb-8 max-w-2xl mx-auto">
+            A maioria das mães chega ao parto sem saber o que esperar das primeiras mamadas. Dias de dor, noites de pouco sono e aquela sensação de culpa de quem acha que está falhando. A boa notícia é que a maioria dessas dificuldades podem ser evitadas com conhecimento adquirido do jeito certo!
+          </p>
 
-            <p className="text-base md:text-lg text-white font-medium mb-6">
-              Com o aprendizado do Domine a Amamentação, você vai conseguir:
-            </p>
+          <p className="text-base md:text-lg text-white font-medium mb-6 max-w-2xl mx-auto">
+            Com o aprendizado do Domine a Amamentação, você vai conseguir:
+          </p>
 
-            <div className="text-left mb-10 space-y-4 max-w-xl mx-auto md:mx-0">
-              <div className="flex flex-col md:flex-row gap-3 items-center md:items-start text-center md:text-left">
-                <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 fill-current text-[oklch(0.72_0.17_15)]" aria-hidden="true">
-                    <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
-                  </svg>
-                </div>
-                <p className="text-white/95 text-sm md:text-base">
-                  Sentir confiança para amamentar, sabendo o que é normal e o que precisa de atenção desde os primeiros dias, ainda na maternidade.
-                </p>
-              </div>
-
-              <div className="flex flex-col md:flex-row gap-3 items-center md:items-start text-center md:text-left">
-                <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 fill-current text-[oklch(0.72_0.17_15)]" aria-hidden="true">
-                    <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
-                  </svg>
-                </div>
-                <p className="text-white/95 text-sm md:text-base">
-                  Reduzir o choro por dificuldades na mamada - causada pela pega incorreta - e atravessar os primeiros dias sem as dores que fazem tantas mães desistirem do seu grande sonho.
-                </p>
-              </div>
-
-              <div className="flex flex-col md:flex-row gap-3 items-center md:items-start text-center md:text-left">
-                <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 fill-current text-[oklch(0.72_0.17_15)]" aria-hidden="true">
-                    <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
-                  </svg>
-                </div>
-                <p className="text-white/95 text-sm md:text-base">
-                  Construir uma relação tranquila e harmoniosa com seu bebê, guardando memórias afetivas positivas dessa fase tão especial.
-                </p>
-              </div>
-            </div>
-
-            <div className="mb-6 text-center md:text-left">
-              <a 
-                href={checkoutUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.52_0.17_15)] text-white font-semibold uppercase tracking-wider shadow-[0_10px_30px_-10px_oklch(0.58_0.16_10/0.5)] hover:bg-[oklch(0.47_0.17_15)] hover:-translate-y-0.5 transition-all px-10 py-5 text-sm md:text-base"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 fill-current text-white" aria-hidden="true">
+          <div className="text-left max-w-2xl mx-auto mb-10 space-y-4">
+            <div className="flex gap-3 items-start">
+              <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-white/15 backdrop-blur flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-white" aria-hidden="true">
                   <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                 </svg>
-                EU QUERO APRENDER A AMAMENTAR
-              </a>
+              </div>
+              <p className="text-white/95 text-sm md:text-base">
+                Sentir confiança para amamentar, sabendo o que é normal e o que precisa de atenção desde os primeiros dias, ainda na maternidade.
+              </p>
             </div>
 
-            <p className="text-xs uppercase tracking-widest text-white/70 inline-flex items-center justify-center md:justify-start gap-1.5 flex-wrap w-full">
-              <span className="inline-flex items-center gap-1">
-                COMPRA SEGURA{" "}
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5" aria-hidden="true">
-                  <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            <div className="flex gap-3 items-start">
+              <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-white/15 backdrop-blur flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-white" aria-hidden="true">
+                  <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                 </svg>
-              </span>
-              <span>·</span>
-              <span>ACESSO POR 1 ANO</span>
-              <span>·</span>
-              <span className="inline-flex items-center gap-1">
-                7 DIAS DE GARANTIA{" "}
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="m9 12 2 2 4-4"></path>
-                </svg>
-              </span>
-            </p>
+              </div>
+              <p className="text-white/95 text-sm md:text-base">
+                Reduzir o choro por dificuldades na mamada - causada pela pega incorreta - e atravessar os primeiros dias sem as dores que fazem tantas mães desistirem do seu grande sonho.
+              </p>
+            </div>
 
+            <div className="flex gap-3 items-start">
+              <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-white/15 backdrop-blur flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-white" aria-hidden="true">
+                  <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
+                </svg>
+              </div>
+              <p className="text-white/95 text-sm md:text-base">
+                Construir uma relação tranquila e harmoniosa com seu bebê, guardando memórias afetivas positivas dessa fase tão especial.
+              </p>
+            </div>
           </div>
+
+          <div className="mb-6">
+            <a 
+              href={checkoutUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.52_0.17_15)] text-white font-semibold uppercase tracking-wider shadow-[0_10px_30px_-10px_oklch(0.58_0.16_10/0.5)] hover:bg-[oklch(0.47_0.17_15)] hover:-translate-y-0.5 transition-all px-10 py-5 text-sm md:text-base"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 fill-current text-white" aria-hidden="true">
+                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
+              </svg>
+              EU QUERO APRENDER A AMAMENTAR
+            </a>
+          </div>
+
+          <p className="text-xs uppercase tracking-widest text-white/70 inline-flex items-center justify-center gap-1.5 flex-wrap">
+            <span className="inline-flex items-center gap-1">
+              COMPRA SEGURA{" "}
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-white" aria-hidden="true">
+                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </span>
+            <span>·</span>
+            <span>ACESSO POR 1 ANO</span>
+            <span>·</span>
+            <span className="inline-flex items-center gap-1">
+              7 DIAS DE GARANTIA{" "}
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-white" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </span>
+          </p>
         </div>
       </section>
 
