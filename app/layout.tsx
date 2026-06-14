@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Cormorant_Garamond, Dancing_Script } from "next/font/google";
 import "./globals.css";
 
@@ -20,6 +20,13 @@ const dancing = Dancing_Script({
   weight: ["400", "500", "600", "700"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#32191a",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export const metadata: Metadata = {
   title: "Domine a Amamentação — Dra. Lorena Carramaschi",
   description: "Curso da Dra. Lorena Carramaschi (pediatra) para amamentar com confiança e sem dor desde os primeiros dias. Protocolo médico em videoaulas + bônus.",
@@ -29,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Domine a Amamentação",
     description: "Construa uma relação tranquila com seu bebê amamentando com confiança e sem dor.",
-    images: ["/foto2.jpeg"],
+    images: ["/foto2.webp"],
   },
 };
 

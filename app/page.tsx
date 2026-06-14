@@ -1,9 +1,7 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
+import FaqAccordion from "./FaqAccordion";
 
 export default function Home() {
-  const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const checkoutUrl = "https://pay.hotmart.com/C56596063W?checkoutMode=10";
 
@@ -143,43 +141,41 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground font-sans">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[oklch(0.45_0.12_15)] via-[oklch(0.55_0.15_12)] to-[oklch(0.65_0.14_20)] text-white">
-        <div 
-          className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none" 
-          style={{
-            backgroundImage: "radial-gradient(circle at 20% 30%, oklch(0.9 0.08 25) 0%, transparent 40%), radial-gradient(circle at 80% 70%, oklch(0.7 0.15 10) 0%, transparent 50%)"
-          }}
-        ></div>
+      <section 
+        className="relative overflow-hidden bg-cover bg-center bg-no-repeat text-white min-h-[85vh] flex items-center"
+        style={{ backgroundImage: "url('/foto1.webp')" }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.25_0.04_20)]/95 via-[oklch(0.25_0.04_20)]/80 to-[oklch(0.25_0.04_20)]/30 z-0"></div>
         
-        <div className="relative max-w-6xl mx-auto px-6 pt-10 pb-16 md:pt-14 md:pb-24">
-          <div className="flex justify-center mb-8 md:mb-12">
-            <img src="/logo-branco.png" alt="Domine a Amamentação" className="h-32 md:h-40 w-auto" />
+        <div className="relative z-10 max-w-7xl w-full mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24">
+          <div className="flex justify-center md:justify-start mb-8 md:mb-12">
+            <img src="/logo-branco.webp" alt="Domine a Amamentação" className="h-28 md:h-32 w-auto" width={128} height={128} />
           </div>
 
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="inline-block font-script text-2xl md:text-3xl text-[oklch(0.95_0.05_25)] mb-4 px-6 py-2 rounded-full border border-white/40 bg-white/10 backdrop-blur">
+          <div className="max-w-2xl text-center md:text-left md:mr-auto">
+            <p className="inline-block font-script text-2xl md:text-3xl text-[oklch(0.95_0.05_25)] mb-4 px-6 py-2 rounded-full border border-white/25 bg-primary/20 backdrop-blur">
               Para mães que querem viver essa fase com leveza
             </p>
             
-            <h1 className="font-serif text-4xl md:text-6xl leading-[1.1] font-medium mb-8">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] font-medium mb-8 text-white">
               Construa uma relação tranquila com seu bebê desde os primeiros dias,{" "}
-              <span className="font-script text-[oklch(0.95_0.06_25)] block md:inline">
+              <span className="font-script text-[oklch(0.72_0.17_15)] block md:inline">
                 amamentando com confiança e sem dor
               </span>
             </h1>
 
-            <p className="text-base md:text-lg text-white/85 leading-relaxed mb-8 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-white/85 leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">
               A maioria das mães chega ao parto sem saber o que esperar das primeiras mamadas. Dias de dor, noites de pouco sono e aquela sensação de culpa de quem acha que está falhando. A boa notícia é que a maioria dessas dificuldades podem ser evitadas com conhecimento adquirido do jeito certo!
             </p>
 
-            <p className="text-base md:text-lg text-white font-medium mb-6 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-white font-medium mb-6">
               Com o aprendizado do Domine a Amamentação, você vai conseguir:
             </p>
 
-            <div className="text-left max-w-2xl mx-auto mb-10 space-y-4">
-              <div className="flex gap-3 items-start">
-                <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-white/15 backdrop-blur flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 fill-current text-white" aria-hidden="true">
+            <div className="text-left mb-10 space-y-4 max-w-xl mx-auto md:mx-0">
+              <div className="flex flex-col md:flex-row gap-3 items-center md:items-start text-center md:text-left">
+                <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 fill-current text-[oklch(0.72_0.17_15)]" aria-hidden="true">
                     <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                   </svg>
                 </div>
@@ -188,9 +184,9 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex gap-3 items-start">
-                <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-white/15 backdrop-blur flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 fill-current text-white" aria-hidden="true">
+              <div className="flex flex-col md:flex-row gap-3 items-center md:items-start text-center md:text-left">
+                <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 fill-current text-[oklch(0.72_0.17_15)]" aria-hidden="true">
                     <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                   </svg>
                 </div>
@@ -199,9 +195,9 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex gap-3 items-start">
-                <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-white/15 backdrop-blur flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 fill-current text-white" aria-hidden="true">
+              <div className="flex flex-col md:flex-row gap-3 items-center md:items-start text-center md:text-left">
+                <div className="mt-1 shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 fill-current text-[oklch(0.72_0.17_15)]" aria-hidden="true">
                     <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                   </svg>
                 </div>
@@ -211,12 +207,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-6 text-center md:text-left">
               <a 
                 href={checkoutUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.72_0.17_15)] text-white font-semibold uppercase tracking-wider shadow-[0_10px_30px_-10px_oklch(0.58_0.16_10/0.5)] hover:bg-[oklch(0.68_0.17_15)] hover:-translate-y-0.5 transition-all px-10 py-5 text-sm md:text-base"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.52_0.17_15)] text-white font-semibold uppercase tracking-wider shadow-[0_10px_30px_-10px_oklch(0.58_0.16_10/0.5)] hover:bg-[oklch(0.47_0.17_15)] hover:-translate-y-0.5 transition-all px-10 py-5 text-sm md:text-base"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 fill-current text-white" aria-hidden="true">
                   <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
@@ -225,7 +221,7 @@ export default function Home() {
               </a>
             </div>
 
-            <p className="text-xs uppercase tracking-widest text-white/70 inline-flex items-center justify-center gap-1.5 flex-wrap">
+            <p className="text-xs uppercase tracking-widest text-white/70 inline-flex items-center justify-center md:justify-start gap-1.5 flex-wrap w-full">
               <span className="inline-flex items-center gap-1">
                 COMPRA SEGURA{" "}
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5" aria-hidden="true">
@@ -244,16 +240,6 @@ export default function Home() {
                 </svg>
               </span>
             </p>
-
-            {/* Custom Image Banner: foto1.jpeg at the top */}
-            <div className="max-w-4xl mx-auto mt-12 md:mt-16 relative">
-              <div className="absolute -inset-2 md:-inset-4 bg-white/5 rounded-3xl blur-md"></div>
-              <img 
-                src="/foto1.jpeg" 
-                alt="Domine a Amamentação" 
-                className="relative rounded-3xl w-full h-auto object-cover shadow-2xl border border-white/10"
-              />
-            </div>
 
           </div>
         </div>
@@ -276,8 +262,8 @@ export default function Home() {
           <div className="rounded-3xl overflow-hidden border border-border bg-card shadow-sm">
             <div className="hidden md:grid grid-cols-[1.2fr_1.4fr_1.4fr] bg-secondary text-secondary-foreground font-serif text-lg">
               <div className="p-5">Situação</div>
-              <div className="p-5 bg-primary/10 text-primary font-semibold flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 fill-primary text-primary" aria-hidden="true">
+              <div className="p-5 bg-primary/10 text-[oklch(0.4_0.12_15)] font-semibold flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 fill-[oklch(0.4_0.12_15)] text-[oklch(0.4_0.12_15)]" aria-hidden="true">
                   <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                 </svg>
                 Com Domine a Amamentação
@@ -293,7 +279,7 @@ export default function Home() {
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-primary uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
+                  <span className="md:hidden text-[10px] font-semibold text-[oklch(0.4_0.12_15)] uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
                   <span className="text-sm leading-relaxed">Chega sabendo o que fazer e coloca em prática desde a primeira vez</span>
                 </div>
               </div>
@@ -317,7 +303,7 @@ export default function Home() {
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-primary uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
+                  <span className="md:hidden text-[10px] font-semibold text-[oklch(0.4_0.12_15)] uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
                   <span className="text-sm leading-relaxed">Identifica a causa, corrige a pega e sabe o que deve (ou não!) aplicar</span>
                 </div>
               </div>
@@ -341,7 +327,7 @@ export default function Home() {
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-primary uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
+                  <span className="md:hidden text-[10px] font-semibold text-[oklch(0.4_0.12_15)] uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
                   <span className="text-sm leading-relaxed">Segue o protocolo em casa e resolve em minutos</span>
                 </div>
               </div>
@@ -365,7 +351,7 @@ export default function Home() {
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-primary uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
+                  <span className="md:hidden text-[10px] font-semibold text-[oklch(0.4_0.12_15)] uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
                   <span className="text-sm leading-relaxed">Sabe o que fazer e continua amamentando com segurança</span>
                 </div>
               </div>
@@ -389,7 +375,7 @@ export default function Home() {
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-primary uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
+                  <span className="md:hidden text-[10px] font-semibold text-[oklch(0.4_0.12_15)] uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
                   <span className="text-sm leading-relaxed">Lê os sinais e entende o que está acontecendo de verdade</span>
                 </div>
               </div>
@@ -413,7 +399,7 @@ export default function Home() {
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-primary uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
+                  <span className="md:hidden text-[10px] font-semibold text-[oklch(0.4_0.12_15)] uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
                   <span className="text-sm leading-relaxed">Sabe interpretar os sinais de saciedade e hidratação do bebê</span>
                 </div>
               </div>
@@ -437,7 +423,7 @@ export default function Home() {
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-primary uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
+                  <span className="md:hidden text-[10px] font-semibold text-[oklch(0.4_0.12_15)] uppercase tracking-wider mb-1">Com Domine a Amamentação</span>
                   <span className="text-sm leading-relaxed">Dorme confiante e em paz, sabendo que o bebê está bem alimentado</span>
                 </div>
               </div>
@@ -501,7 +487,7 @@ export default function Home() {
             <div className="relative flex-1">
               <div className="bg-card border border-primary/15 rounded-2xl p-8 text-center shadow-[0_8px_30px_-12px_oklch(0.58_0.16_10/0.15)] h-full flex flex-col items-center justify-between">
                 <div className="flex items-center justify-center mb-4 h-24">
-                  <img src="/icon-preparar.png" alt="PREPARAR" className="h-24 w-auto object-contain" />
+                  <img src="/icon-preparar.webp" alt="PREPARAR" className="h-24 w-auto object-contain" width={114} height={96} />
                 </div>
                 <div>
                   <h4 className="font-serif text-xl md:text-2xl font-bold tracking-wide mb-3 flex items-baseline justify-center gap-2">
@@ -513,7 +499,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="hidden md:block absolute top-1/3 -right-14 -translate-y-1/2 w-28 h-auto z-10 pointer-events-none">
-                <img src="/arrow-curva.png" alt="" aria-hidden="true" className="w-24 h-auto" />
+                <img src="/arrow-curva.webp" alt="" aria-hidden="true" className="w-24 h-auto" width={96} height={64} />
               </div>
             </div>
 
@@ -521,7 +507,7 @@ export default function Home() {
             <div className="relative flex-1">
               <div className="bg-card border border-primary/15 rounded-2xl p-8 text-center shadow-[0_8px_30px_-12px_oklch(0.58_0.16_10/0.15)] h-full flex flex-col items-center justify-between">
                 <div className="flex items-center justify-center mb-4 h-24">
-                  <img src="/icon-aplicar.png" alt="APLICAR" className="h-24 w-auto object-contain" />
+                  <img src="/icon-aplicar.webp" alt="APLICAR" className="h-24 w-auto object-contain" width={102} height={96} />
                 </div>
                 <div>
                   <h4 className="font-serif text-xl md:text-2xl font-bold tracking-wide mb-3 flex items-baseline justify-center gap-2">
@@ -533,7 +519,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="hidden md:block absolute top-1/3 -right-14 -translate-y-1/2 w-28 h-auto z-10 pointer-events-none">
-                <img src="/arrow-curva.png" alt="" aria-hidden="true" className="w-24 h-auto" />
+                <img src="/arrow-curva.webp" alt="" aria-hidden="true" className="w-24 h-auto" width={96} height={64} />
               </div>
             </div>
 
@@ -541,7 +527,7 @@ export default function Home() {
             <div className="relative flex-1">
               <div className="bg-card border border-primary/15 rounded-2xl p-8 text-center shadow-[0_8px_30px_-12px_oklch(0.58_0.16_10/0.15)] h-full flex flex-col items-center justify-between">
                 <div className="flex items-center justify-center mb-4 h-24">
-                  <img src="/icon-sustentar.png" alt="SUSTENTAR" className="h-24 w-auto object-contain" />
+                  <img src="/icon-sustentar.webp" alt="SUSTENTAR" className="h-24 w-auto object-contain" width={144} height={96} />
                 </div>
                 <div>
                   <h4 className="font-serif text-xl md:text-2xl font-bold tracking-wide mb-3 flex items-baseline justify-center gap-2">
@@ -597,9 +583,11 @@ export default function Home() {
           <div className="relative max-w-sm mx-auto md:max-w-none w-full">
             <div className="absolute -inset-4 bg-primary/10 rounded-3xl rotate-[-3deg]"></div>
             <img 
-              src="/foto2.jpeg" 
+              src="/foto2.webp" 
               alt="Dra. Lorena Carramaschi" 
               className="relative rounded-3xl w-full h-auto object-cover shadow-xl border border-primary/5"
+              width={853}
+              height={1280}
             />
           </div>
 
@@ -701,7 +689,7 @@ export default function Home() {
                 href={checkoutUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full md:w-auto items-center justify-center gap-2 rounded-full bg-[oklch(0.72_0.17_15)] text-white font-semibold uppercase tracking-wider shadow-[0_10px_30px_-10px_oklch(0.58_0.16_10/0.5)] hover:bg-[oklch(0.68_0.17_15)] hover:-translate-y-0.5 transition-all px-10 py-5 text-sm"
+                className="inline-flex w-full md:w-auto items-center justify-center gap-2 rounded-full bg-[oklch(0.52_0.17_15)] text-white font-semibold uppercase tracking-wider shadow-[0_10px_30px_-10px_oklch(0.58_0.16_10/0.5)] hover:bg-[oklch(0.47_0.17_15)] hover:-translate-y-0.5 transition-all px-10 py-5 text-sm"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 fill-current text-white" aria-hidden="true">
                   <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
@@ -760,52 +748,14 @@ export default function Home() {
             <h2 className="font-serif text-3xl md:text-5xl text-foreground">Dúvidas antes de decidir</h2>
           </div>
 
-          <div className="space-y-3">
-            {faqs.map((faq, i) => {
-              const isOpen = openFaq === i;
-              return (
-                <div key={i} className="bg-card border border-border rounded-2xl overflow-hidden shadow-xs">
-                  <button 
-                    onClick={() => setOpenFaq(isOpen ? null : i)}
-                    className="w-full flex items-center justify-between gap-4 p-5 md:p-6 text-left hover:bg-muted/40 transition-colors focus:outline-none"
-                  >
-                    <span className="font-serif text-lg md:text-xl text-foreground font-medium">
-                      {faq.q}
-                    </span>
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      width="24" 
-                      height="24" 
-                      viewBox="0 0 24 24" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      strokeWidth="2" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      className={`w-5 h-5 shrink-0 text-primary transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
-                    >
-                      <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                  </button>
-                  
-                  <div 
-                    className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
-                  >
-                    <div className="px-5 md:px-6 pb-6 text-muted-foreground text-sm md:text-base leading-relaxed border-t border-border/20 pt-4">
-                      {faq.a}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          <FaqAccordion faqs={faqs} />
 
           <div className="text-center mt-14">
             <a 
               href={checkoutUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.72_0.17_15)] text-white font-semibold uppercase tracking-wider shadow-[0_10px_30px_-10px_oklch(0.58_0.16_10/0.5)] hover:bg-[oklch(0.68_0.17_15)] hover:-translate-y-0.5 transition-all px-10 py-5 text-sm"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.52_0.17_15)] text-white font-semibold uppercase tracking-wider shadow-[0_10px_30px_-10px_oklch(0.58_0.16_10/0.5)] hover:bg-[oklch(0.47_0.17_15)] hover:-translate-y-0.5 transition-all px-10 py-5 text-sm"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 fill-current text-white" aria-hidden="true">
                 <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
@@ -819,7 +769,7 @@ export default function Home() {
       {/* Footer Section */}
       <footer className="bg-[oklch(0.25_0.04_20)] text-white/70 py-12 px-6">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <img src="/logo-branco.png" alt="Domine a Amamentação" className="h-20 w-auto opacity-90" />
+          <img src="/logo-branco.webp" alt="Domine a Amamentação" className="h-20 w-auto opacity-90" width={80} height={80} />
           
           <div className="text-center md:text-right text-sm">
             <p className="text-white font-serif text-lg mb-1">Dra. Lorena Carramaschi</p>
