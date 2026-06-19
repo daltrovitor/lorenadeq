@@ -28,8 +28,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Domine a Amamentação — Dra. Lorena Carramaschi",
-  description: "Curso da Dra. Lorena Carramaschi (pediatra) para amamentar com confiança e sem dor desde os primeiros dias. Protocolo médico em videoaulas + bônus.",
+  title: "Domine a Amamentação — Dra. Lorena Caramaschi",
+  description: "Curso da Dra. Lorena Caramaschi (pediatra) para amamentar com confiança e sem dor desde os primeiros dias. Protocolo médico em videoaulas + bônus.",
   icons: {
     icon: "/icon.png",
   },

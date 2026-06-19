@@ -182,8 +182,12 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="text-base md:text-lg text-white/85 leading-relaxed mb-8 max-w-2xl mx-auto">
-            A maioria das mães chega ao parto sem saber o que esperar das primeiras mamadas. Dias de dor, noites de pouco sono e aquela sensação de culpa de quem acha que está falhando. A boa notícia é que a maioria dessas dificuldades podem ser evitadas com conhecimento adquirido do jeito certo!
+          <p className="text-base md:text-lg text-white/85 leading-relaxed mb-6 max-w-2xl mx-auto">
+            A maioria das mães chega ao parto sem saber o que esperar das primeiras mamadas. Dias de dor, noites de pouco sono e aquela sensação de culpa de quem acha que está falhando.
+          </p>
+
+          <p className="text-base md:text-lg text-white/95 font-medium leading-relaxed mb-8 max-w-2xl mx-auto">
+            A boa notícia é que a maioria dessas dificuldades podem ser evitadas com conhecimento adquirido do jeito certo!
           </p>
 
           <p className="text-base md:text-lg text-white font-medium mb-6 max-w-2xl mx-auto">
@@ -235,7 +239,7 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 fill-current text-white" aria-hidden="true">
                 <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
               </svg>
-              EU QUERO APRENDER A AMAMENTAR
+               QUERO APRENDER A AMAMENTAR
             </a>
           </div>
 
@@ -600,7 +604,7 @@ export default function Home() {
             <div className="absolute -inset-4 bg-primary/10 rounded-3xl rotate-[-3deg]"></div>
             <img 
               src="/foto2.webp" 
-              alt="Dra. Lorena Carramaschi" 
+              alt="Dra. Lorena Caramaschi" 
               className="relative rounded-3xl w-full h-auto object-cover shadow-xl border border-primary/5"
               width={853}
               height={1280}
@@ -609,9 +613,12 @@ export default function Home() {
 
           <div>
             <p className="font-script text-2xl text-primary mb-2">Quem irá te acompanhar</p>
-            <h2 className="font-serif text-4xl md:text-5xl mb-2 text-foreground">Dra. Lorena Carramaschi</h2>
+            <h2 className="font-serif text-4xl md:text-5xl mb-2 text-foreground">Dra. Lorena Caramaschi</h2>
+            <p className="text-sm tracking-widest uppercase text-muted-foreground mb-2">
+              MÉDICA PEDIATRA  
+            </p>
             <p className="text-sm tracking-widest uppercase text-muted-foreground mb-8">
-              MÉDICA PEDIATRA · CRM/GO 20.882 - RQE 12.917
+              CRM/GO 20.882 - RQE 12.917
             </p>
             
             <div className="space-y-5 text-foreground/85 text-sm md:text-base leading-relaxed">
@@ -710,7 +717,7 @@ export default function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 fill-current text-white" aria-hidden="true">
                   <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                 </svg>
-                EU QUERO OBTER ESSA OFERTA
+                 QUERO OBTER ESSA OFERTA
               </a>
             </div>
 
@@ -776,7 +783,7 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 fill-current text-white" aria-hidden="true">
                 <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
               </svg>
-              EU QUERO APRENDER A AMAMENTAR
+               QUERO APRENDER A AMAMENTAR
             </a>
           </div>
         </div>
@@ -788,7 +795,7 @@ export default function Home() {
           <img src="/logo-branco.webp" alt="Domine a Amamentação" className="h-20 w-auto opacity-90" width={80} height={80} />
           
           <div className="text-center md:text-right text-sm">
-            <p className="text-white font-serif text-lg mb-1">Dra. Lorena Carramaschi</p>
+            <p className="text-white font-serif text-lg mb-1">Dra. Lorena Caramaschi</p>
             <p className="text-xs tracking-wider">MÉDICA PEDIATRA · CRM/GO 20.882 - RQE 12.917</p>
             <p className="mt-3 text-xs opacity-70">
               © {new Date().getFullYear()} Domine a Amamentação. Todos os direitos reservados.
