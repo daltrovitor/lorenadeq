@@ -172,7 +172,7 @@ export default function Home() {
           }}
         ></div>
         <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="inline-block font-script text-[30px] sm:text-xl md:text-3xl text-[oklch(0.95_0.05_25)] text-center leading-relaxed px-6 py-2.5 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-xs shadow-sm mb-6">
+          <p className="inline-block font-script text-md sm:text-xl md:text-3xl text-[oklch(0.95_0.05_25)] text-center leading-relaxed px-6 py-2.5 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-xs shadow-sm mb-6">
             Para mães que querem viver essa fase com leveza
           </p>
           <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.1] font-medium mb-8 text-white">
