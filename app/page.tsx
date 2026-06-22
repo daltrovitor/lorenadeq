@@ -177,7 +177,7 @@ export default function Home() {
           </p>
           <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.1] font-medium mb-8 text-white">
             Construa uma relação tranquila com seu bebê desde os primeiros dias,{" "}
-            <span className="font-script text-[oklch(0.95_0.06_25)] block md:inline">
+            <span className="mt-2 font-serif text-white block md:inline">
               amamentando com confiança e sem dor
             </span>
           </h1>
