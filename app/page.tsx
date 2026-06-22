@@ -32,7 +32,7 @@ export default function Home() {
     },
     {
       q: "O curso ensina sobre mastite? Posso amamentar enquanto estou com mastite?",
-      a: "Sim, há uma aula dedicada às intercorrências que cobre mastite com detalhes: o que é, como identificar, quando amamentar, quando não amamentar e quando procurar médico."
+      a: "Sim, há uma aula dedicada às intercorrências, que explica sobre a mastite com perfeição: o que é, como identificar, como evitar, quando amamentar ou não amamentar, e quando procurar atendimento médico."
     },
     {
       q: "Tenho uma filha de 2 meses com dificuldade na pega. Ainda dá para corrigir?",
@@ -492,7 +492,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mb-3">
-            <h3 className="font-serif text-2xl md:text-4xl text-foreground">
+            <h3 className="font-serif text-3xl md:text-5xl text-foreground">
               3 passos para amamentar com <span className="text-primary italic">confiança e sem dor</span>
             </h3>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-primary fill-primary mx-auto mt-3" aria-hidden="true">
@@ -758,7 +758,7 @@ export default function Home() {
           <p className="text-muted-foreground leading-relaxed text-sm md:text-base max-w-xl mx-auto">
             O conteúdo do Domine a Amamentação aumenta MUITO a sua probabilidade de sucesso porque a maioria das dificuldades tem causa técnica e são totalmente evitáveis com conhecimento e informação de qualidade.
             <br /><br />
-            Mas se nos primeiros 7 dias você sentir que o conteúdo não está ajudando, a garantia cobre 100% do reembolso, sem burocracia.
+            Mas se nos primeiros 7 dias você sentir que o conteúdo não está ajudando, a garantia cobre reembolso de 100% do investimento, sem burocracia.
           </p>
         </div>
       </section>
@@ -790,7 +790,7 @@ export default function Home() {
       </section>
 
       {/* Footer Section */}
-      <footer className="bg-[oklch(0.25_0.04_20)] text-white/70 py-12 px-6">
+      <footer className="bg-gradient-to-br from-[oklch(0.45_0.12_15)] via-[oklch(0.55_0.15_12)] to-[oklch(0.65_0.14_20)] text-white/90 py-12 px-6">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <img src="/logo-branco.webp" alt="Domine a Amamentação" className="h-20 w-auto opacity-90" width={80} height={80} />
           
