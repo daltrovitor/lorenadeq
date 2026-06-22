@@ -655,7 +655,7 @@ export default function Home() {
           <p className="text-white/80 mb-12 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
             Tudo o que você precisa para atravessar as primeiras semanas de amamentação com orientação médica detalhada e linguagem clara, didática e acolhedora.
             <br /><br />
-            Se eu fosse você, não perderia essa chance!
+            O melhor que você pode fazer pelo seu bebê agora é chegar preparada.
           </p>
 
           <div className="bg-white/95 text-foreground rounded-3xl p-8 md:p-10 shadow-2xl">
@@ -690,14 +690,24 @@ export default function Home() {
                 <span className="font-semibold text-muted-foreground whitespace-nowrap">R$ 39</span>
               </div>
 
+              <div className="flex justify-between gap-4 pb-4 border-b border-border last:border-0">
+                <span className="flex gap-3 items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-primary mt-0.5 shrink-0" aria-hidden="true">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span className="font-serif text-base md:text-lg text-foreground">Bônus: Desmame (PDF)</span>
+                </span>
+                <span className="font-semibold text-muted-foreground whitespace-nowrap">R$ 49</span>
+              </div>
+
               <div className="flex justify-between pt-2">
                 <span className="text-muted-foreground text-sm">Total dos itens</span>
-                <span className="line-through text-muted-foreground text-sm">R$ 335</span>
+                <span className="line-through text-muted-foreground text-sm">R$ 384</span>
               </div>
             </div>
 
             <div className="text-center py-6 border-y border-border my-6">
-              <p className="text-muted-foreground text-sm mb-1">De R$ 335 por apenas</p>
+              <p className="text-muted-foreground text-sm mb-1">De R$ 384 por apenas</p>
               <p className="font-serif text-5xl md:text-7xl text-primary font-bold">
                 R$ 97
                 <span className="text-base md:text-lg font-sans font-normal text-muted-foreground ml-2">
