@@ -171,7 +171,7 @@ export default function Home() {
             backgroundImage: "radial-gradient(circle at 20% 30%, oklch(0.9 0.08 25) 0%, transparent 40%), radial-gradient(circle at 80% 70%, oklch(0.7 0.15 10) 0%, transparent 50%)"
           }}
         ></div>
-        <div className="relative max-w-4xl mx-auto px-2 text-center">
+        <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="inline-block font-script text-[30px] sm:text-xl md:text-3xl text-[oklch(0.95_0.05_25)] text-center leading-relaxed px-6 py-2.5 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-xs shadow-sm mb-6">
             Para mães que querem viver essa fase com leveza
           </p>
@@ -481,7 +481,7 @@ export default function Home() {
               </h2>
             </div>
             
-            <div className="md:border-l md:border-primary/30 md:pl-10 space-y-4 text-muted-foreground leading-relaxed">
+            <div className="md:border-l text-center md:border-primary/30 md:pl-10 space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 Diferente dos conteúdos genéricos encontrados na internet, o <strong className="text-foreground font-semibold">Domine a Amamentação</strong> foi desenvolvido por médica pediatra para funcionar como um verdadeiro apoio, como se tivesse a especialista ao seu lado o tempo todo.
               </p>
