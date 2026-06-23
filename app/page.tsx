@@ -288,7 +288,7 @@ export default function Home() {
                 </svg>
                 Com Domine a Amamentação
               </div>
-              <div className="p-5">Sem o protocolo</div>
+              <div className="p-5">Sem conhecimento</div>
             </div>
 
             {/* Row 1 */}
@@ -309,7 +309,7 @@ export default function Home() {
                   <path d="m6 6 12 12"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem o protocolo</span>
+                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem conhecimento</span>
                   <span className="text-sm leading-relaxed">Espera alguém ter tempo para ensinar na correria da maternidade</span>
                 </div>
               </div>
@@ -333,7 +333,7 @@ export default function Home() {
                   <path d="m6 6 12 12"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem o protocolo</span>
+                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem conhecimento</span>
                   <span className="text-sm leading-relaxed">Aguenta a dor contando os segundos para a mamada terminar (ou pensando em desistir a qualquer momento).</span>
                 </div>
               </div>
@@ -357,7 +357,7 @@ export default function Home() {
                   <path d="m6 6 12 12"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem o protocolo</span>
+                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem conhecimento</span>
                   <span className="text-sm leading-relaxed">Acorda todo mundo ou corre ao pronto-socorro às 3h</span>
                 </div>
               </div>
@@ -381,7 +381,7 @@ export default function Home() {
                   <path d="m6 6 12 12"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem o protocolo</span>
+                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem conhecimento</span>
                   <span className="text-sm leading-relaxed">Para de amamentar por medo, muitas vezes sem necessidade</span>
                 </div>
               </div>
@@ -405,7 +405,7 @@ export default function Home() {
                   <path d="m6 6 12 12"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem o protocolo</span>
+                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem conhecimento</span>
                   <span className="text-sm leading-relaxed">Interpreta como leite fraco e complementa com fórmula</span>
                 </div>
               </div>
@@ -429,7 +429,7 @@ export default function Home() {
                   <path d="m6 6 12 12"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem o protocolo</span>
+                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem conhecimento</span>
                   <span className="text-sm leading-relaxed">Vive em dúvida se o bebê está cheio ou se precisa mamar mais</span>
                 </div>
               </div>
@@ -453,7 +453,7 @@ export default function Home() {
                   <path d="m6 6 12 12"></path>
                 </svg>
                 <div className="flex flex-col">
-                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem o protocolo</span>
+                  <span className="md:hidden text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-1">Sem conhecimento</span>
                   <span className="text-sm leading-relaxed">Vira noites e noites em claro, dando o peito toda vez que o bebê chora</span>
                 </div>
               </div>
