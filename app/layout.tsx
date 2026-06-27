@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Cormorant_Garamond, Dancing_Script } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import MetaCapiTracker from "./MetaCapiTracker";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -75,9 +76,9 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
+        <MetaCapiTracker />
         {children}
       </body>
     </html>
   );
 }
-
