@@ -3,16 +3,16 @@ import crypto from 'crypto';
 const PIXEL_ID = process.env.META_PIXEL_ID || '673959250163272';
 const ACCESS_TOKEN = process.env.META_ACCESS_TOKEN || 'EAANZB1OwzrOUBR9U0QZBl6gZCNkouM1zVeFeqdkZBtdlWVZAZBFmFc8zrAQIUoRcnGQw68vaZCz6Gk18RM00ffuzA4qq8I5zFGUYxBSG1stvqZBwBvGRwUACXsHwYuZCZAKHb3GG3ffFeLt4WW0nlSPzTdKJhi5m3fumBuvMSI4ZC0jBCAQdPJxmVFqCXA4TPIqPa1hwgZDZD';
 
-export function hashValue(value: string | undefined | null): string | null {
+export function hashValue(value: any): string | null {
   if (!value) return null;
-  const cleaned = value.trim().toLowerCase();
+  const cleaned = String(value).trim().toLowerCase();
   return crypto.createHash('sha256').update(cleaned).digest('hex');
 }
 
-export function hashPhone(phone: string | undefined | null): string | null {
+export function hashPhone(phone: any): string | null {
   if (!phone) return null;
   // Keep only digits
-  let cleaned = phone.replace(/\D/g, '');
+  let cleaned = String(phone).replace(/\D/g, '');
   // If it's a Brazilian phone number without country code
   if (cleaned.length === 10 || cleaned.length === 11) {
     cleaned = '55' + cleaned;
@@ -42,7 +42,7 @@ interface CapiEventOptions {
   userData: UserData;
   customData?: CustomData;
   eventSourceUrl?: string;
-  actionSource?: 'website' | 'system' | 'app' | 'other';
+  actionSource?: 'website' | 'system_generated' | 'app' | 'other';
   eventId?: string;
 }
 

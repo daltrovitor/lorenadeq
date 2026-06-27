@@ -77,7 +77,7 @@ export async function POST(request: NextRequest) {
         currency,
         value,
       },
-      actionSource: 'system',
+      actionSource: 'system_generated',
       eventId: transactionId,
     });
 
