@@ -58,6 +58,10 @@ export async function POST(request: NextRequest) {
     // Use transaction id for deduplication and matching
     const transactionId = data.purchase?.transaction || data.order?.id || payload.id || '';
 
+    // Try to extract client IP and user agent if Hotmart includes them in the payload
+    const clientIpAddress = payload.buyer_ip || data.buyer_ip || data.purchase?.buyer_ip || data.buyer?.ip || null;
+    const clientUserAgent = payload.buyer_user_agent || data.buyer_user_agent || null;
+
     // Send server-side event
     const result = await sendMetaCapiEvent({
       eventName: 'Purchase',
@@ -66,6 +70,8 @@ export async function POST(request: NextRequest) {
         ph: hashedPhone,
         fn: hashedFirstName,
         ln: hashedLastName,
+        client_ip_address: clientIpAddress,
+        client_user_agent: clientUserAgent,
       },
       customData: {
         currency,
