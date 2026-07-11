@@ -62,6 +62,22 @@ export async function POST(request: NextRequest) {
     const clientIpAddress = payload.buyer_ip || data.buyer_ip || data.purchase?.buyer_ip || data.buyer?.ip || null;
     const clientUserAgent = payload.buyer_user_agent || data.buyer_user_agent || null;
 
+    // Try to extract client-side generated external_id from Hotmart tracking params
+    const sck = data.purchase?.sck || data.tracking?.sck || '';
+    const src = data.purchase?.src || data.tracking?.src || '';
+    
+    let webhookExternalId: string | null = null;
+    if (typeof sck === 'string' && sck.startsWith('ext_')) {
+      webhookExternalId = sck;
+    } else if (typeof src === 'string' && src.startsWith('ext_')) {
+      webhookExternalId = src;
+    }
+    
+    // Fall back to using hashed email as the external_id if no client-side tracking ID was captured
+    if (!webhookExternalId && hashedEmail) {
+      webhookExternalId = hashedEmail;
+    }
+
     // Send server-side event
     const result = await sendMetaCapiEvent({
       eventName: 'Purchase',
@@ -70,6 +86,7 @@ export async function POST(request: NextRequest) {
         ph: hashedPhone,
         fn: hashedFirstName,
         ln: hashedLastName,
+        external_id: webhookExternalId,
         client_ip_address: clientIpAddress,
         client_user_agent: clientUserAgent,
       },

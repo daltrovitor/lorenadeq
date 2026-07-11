@@ -25,6 +25,7 @@ interface UserData {
   ph?: string | null;
   fn?: string | null;
   ln?: string | null;
+  external_id?: string | null;
   client_ip_address?: string | null;
   client_user_agent?: string | null;
   fbp?: string | null;
@@ -62,6 +63,7 @@ export async function sendMetaCapiEvent({
   if (userData.ph) cleanUserData.ph = [userData.ph];
   if (userData.fn) cleanUserData.fn = [userData.fn];
   if (userData.ln) cleanUserData.ln = [userData.ln];
+  if (userData.external_id) cleanUserData.external_id = [userData.external_id];
   if (userData.client_ip_address) cleanUserData.client_ip_address = userData.client_ip_address;
   if (userData.client_user_agent) cleanUserData.client_user_agent = userData.client_user_agent;
   if (userData.fbp) cleanUserData.fbp = userData.fbp;
