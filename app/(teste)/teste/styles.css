@@ -216,6 +216,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
       gap: 10px;
       width: 100%;
       max-width: 380px;
@@ -1456,23 +1457,11 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       flex-direction: column;
       align-items: center;
       margin-bottom: 36px;
-    }.secao-footer .footer-logo-icon{
-      width: 60px;
-      height: 66px;
+    }.secao-footer .footer-logo-img{
+      width: 100px;
+      height: auto;
+      display: block;
       margin-bottom: 10px;
-    }.secao-footer .footer-logo-dots{
-      font-family: 'Montserrat', sans-serif;
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      color: #FFFFFF;
-      margin-bottom: 2px;
-    }.secao-footer .footer-logo-script{
-      font-family: 'Dancing Script', cursive;
-      font-size: 30px;
-      font-weight: 600;
-      color: #FFFFFF;
-      line-height: 1.1;
     }.secao-footer .footer-doctor-block{
       display: flex;
       flex-direction: column;
@@ -1509,13 +1498,8 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
     }@media (min-width: 1024px){
       .footer-domine {
         padding:88px 24px 64px !important;
-      }.secao-footer .footer-logo-block{
-        margin-bottom:44px !important;
-      }.secao-footer .footer-logo-icon{
-        width:72px !important;
-        height:79px !important;
-      }.secao-footer .footer-logo-script{
-        font-size:34px !important;
+      }.secao-footer .footer-logo-img{
+        width: 140px !important;
       }.secao-footer .footer-doctor-name{
         font-size:25px !important;
       }.secao-footer .footer-credentials{

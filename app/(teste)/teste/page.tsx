@@ -1109,17 +1109,7 @@ export default function TestPage() {
 
     <!-- Bloco do logo -->
     <div class="footer-logo-block">
-      <svg class="footer-logo-icon" viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <!-- Círculo acima do coração (símbolo de amamentação) -->
-        <circle cx="30" cy="6" r="6" fill="white"/>
-        <!-- Linha de conexão -->
-        <line x1="30" y1="12" x2="30" y2="17" stroke="white" stroke-width="1.5"/>
-        <!-- Coração -->
-        <path d="M30 62 C30 62 6 46 6 30 C6 21.16 13.16 14 22 14 C25.5 14 28.7 15.3 30 17 C31.3 15.3 34.5 14 38 14 C46.84 14 54 21.16 54 30 C54 46 30 62 30 62Z" fill="white"/>
-      </svg>
-
-      <p class="footer-logo-dots">&middot;DOMINE&middot;</p>
-      <p class="footer-logo-script">Amamentação</p>
+      <img class="footer-logo-img" src="/logo-branco.webp" alt="Domine a Amamentação">
     </div>
 
     <!-- Bloco da médica -->
