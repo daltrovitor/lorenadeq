@@ -138,7 +138,7 @@ export default function TestPage() {
     <header class="comparacao-header">
       <span class="comparacao-selo">A diferença está no preparo</span>
       <h2 class="comparacao-titulo" id="comparacao-titulo">
-        O que muda quando você<br>chega preparada
+        O que muda quando você <br>chega preparada
       </h2>
       <div class="comparacao-intro">
         <p>A amamentação que você imaginou é possível. O que separa uma experiência tranquila de outra frustrante e exaustiva, na maioria dos casos, é ter as informações certas no momento certo, antes do parto.</p>
@@ -331,7 +331,7 @@ export default function TestPage() {
 <section class="metodo-section" aria-label="Método: 3 passos para amamentar com confiança e sem dor">
 
     <h2 class="metodo-heading">
-      3 passos para amamentar com<br>
+      3 passos para amamentar com <br>
       <em>confiança e sem dor</em>
     </h2>
 
@@ -419,7 +419,7 @@ export default function TestPage() {
 <div class="secao-modulos">
 <section class="modulos-section" aria-labelledby="modulos-titulo">
     <h2 class="modulos-titulo" id="modulos-titulo">
-      O que você vai<br><em>aprender</em>
+      O que você vai <br><em>aprender</em>
     </h2>
 
     <div class="modulos-grade">
@@ -619,7 +619,7 @@ export default function TestPage() {
       <header class="prova-dados__header">
         <span class="prova-dados__badge" aria-hidden="true">Por que isso importa agora</span>
         <h2 class="prova-dados__titulo" id="prova-dados-titulo">
-          O desafio é maior do que parece,<br>
+          O desafio é maior do que parece, <br>
           e a maioria enfrenta <em>sozinha</em>
         </h2>
         <p class="prova-dados__intro">
@@ -797,8 +797,8 @@ export default function TestPage() {
   <span class="oferta-selo">A Oportunidade Completa</span>
 
   <h2 class="oferta-titulo">
-    Amamentar com confiança e<br>
-    sem dor desde os primeiros<br>
+    Amamentar com confiança e <br>
+    sem dor desde os primeiros <br>
     dias
   </h2>
 
@@ -906,7 +906,7 @@ export default function TestPage() {
         <span class="garantia-eyebrow">Sem risco para você</span>
 
         <h2 class="garantia-titulo">
-          Garantia incondicional<br>de 7 dias
+          Garantia incondicional <br>de 7 dias
         </h2>
 
         <p class="garantia-texto">

@@ -3,6 +3,13 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; }
 body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
 [class^="secao-"] { width: 100%; max-width: 100%; }
 
+@media (max-width: 767px) {
+  .new-landing-page-root br {
+    display: none;
+  }
+}
+
+
 /* === secao-hero (hero-domine-a-amamentacao.html) === */
 .secao-hero *{
       box-sizing: border-box;
@@ -206,7 +213,8 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       align-items: center;
       justify-content: center;
       gap: 10px;
-      width: 90%;
+      width: 100%;
+      max-width: 380px;
       margin: 0 auto 16px;
       background: #8B2642;
       color: #ffffff;
@@ -492,7 +500,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       font-size: 15px;
       line-height: 1.72;
       color: #666666;
-      max-width: 280px;
+      max-width: 100%;
       margin: 0 auto;
     }@media (min-width: 640px){
       .metodo-heading {
@@ -540,10 +548,15 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       color: #c45c7a;
     }.secao-modulos .modulos-grade{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 14px;
       max-width: 680px;
       margin: 0 auto;
+    }
+@media (min-width: 480px){
+      .secao-modulos .modulos-grade {
+        grid-template-columns: 1fr 1fr;
+      }
     }.secao-modulos .modulo-card{
       background-color: #ffffff;
       border-radius: 16px;
@@ -750,16 +763,22 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       opacity: 0.5;
     }.secao-prova-dados .depo-grid{
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }@media (max-width: 680px){
-      .depo-grid {
-        grid-template-columns:1fr !important;
-        gap:16px !important;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }@media (min-width: 600px){
+      .secao-prova-dados .depo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }@media (min-width: 900px){
+      .secao-prova-dados .depo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
       }
     }@media (min-width: 1024px){
-      .depo-grid {
-        gap:28px !important;
+      .secao-prova-dados .depo-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 28px !important;
       }
     }.secao-prova-dados .depo-card{
       background-color: #FFFFFF;
@@ -773,7 +792,8 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
     }.secao-prova-dados .depo-card__print{
       width: 100%;
       max-width: 220px;
-      height: 340px;
+      height: auto;
+      aspect-ratio: 400 / 600;
       object-fit: cover;
       object-position: top;
       border-radius: 14px;
@@ -789,7 +809,8 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
     }@media (min-width: 1024px){
       .depo-card__print {
         max-width:200px !important;
-        height:310px !important;
+        height: auto !important;
+        aspect-ratio: 400 / 600 !important;
       }
     }.secao-prova-dados .depo-card__autor{
       font-family: 'Inter', sans-serif;
