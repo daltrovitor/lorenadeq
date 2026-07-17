@@ -795,24 +795,14 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       width: 100%;
       max-width: 220px;
       height: auto;
-      aspect-ratio: 400 / 600;
-      object-fit: cover;
-      object-position: top;
       border-radius: 14px;
       display: block;
       margin: 0 auto;
       box-shadow: 0 4px 14px rgba(60,20,25,0.10);
-      background-color: #FDF6F4;
-      color: #9C2E45;
-      font-size: 12px;
-      text-align: center;
-      box-sizing: border-box;
-      padding: 16px;
     }@media (min-width: 1024px){
       .depo-card__print {
         max-width:200px !important;
         height: auto !important;
-        aspect-ratio: 400 / 600 !important;
       }
     }.secao-prova-dados .depo-card__autor{
       font-family: 'Inter', sans-serif;
