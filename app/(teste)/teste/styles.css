@@ -17,7 +17,75 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-    }@media (min-width: 601px){
+    }.secao-hero /* ---- PHOTO BLOCK ---- */
+    .hero-photo-wrapper{
+      position: relative;
+      width: 100%;
+      height: 42vh;
+      min-height: 260px;
+      overflow: hidden;
+    }.secao-hero .hero-photo{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }.secao-hero /* ---- LOGO OVERLAY ---- */
+    .hero-logo{
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      filter: drop-shadow(0 1px 3px rgba(0,0,0,0.3));
+    }.secao-hero .hero-logo-img{
+      width: 84px;
+      height: auto;
+      display: block;
+    }.secao-hero /* ---- CONTENT BLOCK ---- */
+    .hero-content{
+      background-color: #A52B52;
+      padding: 40px 24px 48px;
+      text-align: center;
+    }.secao-hero /* ---- BADGE ---- */
+    .hero-badge{
+      display: block;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 28px;
+      padding: 12px 20px;
+      margin-bottom: 32px;
+      text-align: center;
+    }.secao-hero .hero-badge-text{
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 15px;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 1.4;
+    }.secao-hero /* ---- HEADLINE ---- */
+    .hero-headline{
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(30px, 8vw, 40px);
+      font-weight: 400;
+      line-height: 1.2;
+      color: #FFFFFF;
+      margin-bottom: 28px;
+      text-align: center;
+    }.secao-hero /* ---- SUBHEADLINE ---- */
+    .hero-sub{
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      text-align: center;
+    }.secao-hero .hero-sub-regular{
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.90);
+      margin-bottom: 20px;
+    }.secao-hero .hero-sub-bold{
+      font-weight: 700;
+      color: #FFFFFF;
+    } 
+@media (min-width: 601px){
       .hero-section {
         max-width:100% !important;
       }.secao-hero .hero-photo-wrapper{
@@ -42,7 +110,8 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       }.secao-hero .hero-logo-img{
         width:96px !important;
       }
-    }@media (min-width: 1024px){
+    } 
+@media (min-width: 1024px){
       .hero-section {
         max-width:1200px !important;
         display:grid !important;
@@ -228,7 +297,102 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       padding: 64px 24px;
       max-width: 680px;
       margin: 0 auto;
-    }@media (min-width: 1024px){
+    }.secao-comparacao /* ── Cabeçalho ── */
+    .comparacao-header{
+      text-align: center;
+      margin-bottom: 40px;
+    }.secao-comparacao .comparacao-selo{
+      display: block;
+      font-family: 'Dancing Script', cursive;
+      font-size: 20px;
+      font-style: italic;
+      color: #c87a7a;
+      margin-bottom: 14px;
+      letter-spacing: 0.01em;
+    }.secao-comparacao .comparacao-titulo{
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #2d2828;
+      line-height: 1.15;
+      margin-bottom: 28px;
+    }@media (min-width: 600px){
+      .comparacao-titulo {
+        font-size:38px !important;
+      }
+    }.secao-comparacao .comparacao-intro{
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      color: #555555;
+      line-height: 1.75;
+      max-width: 580px;
+      margin: 0 auto;
+    }.secao-comparacao .comparacao-intro p + p{
+      margin-top: 18px;
+    }.secao-comparacao /* ── Lista de cards ── */
+    .comparacao-lista{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 40px;
+      list-style: none;
+    }.secao-comparacao /* ── Card individual ── */
+    .comparacao-card{
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 0 1px rgba(0,0,0,0.04);
+      overflow: hidden;
+    }.secao-comparacao .comparacao-card__situacao{
+      padding: 18px 22px 16px;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 19px;
+      font-weight: 400;
+      color: #2d2828;
+      line-height: 1.3;
+    }.secao-comparacao .comparacao-divider{
+      height: 1px;
+      background-color: #e8e0db;
+    }.secao-comparacao /* ── Linha COM / SEM ── */
+    .comparacao-row{
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 22px;
+    }.secao-comparacao .comparacao-row__icon{
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      margin-top: 2px;
+    }.secao-comparacao .comparacao-row__content{
+      flex: 1;
+    }.secao-comparacao .comparacao-row__label{
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }.secao-comparacao .comparacao-row__label--com{
+      color: #3d7a52;
+    }.secao-comparacao .comparacao-row__label--sem{
+      color: #a33333;
+    }.secao-comparacao .comparacao-row__texto{
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.55;
+    }.secao-comparacao .comparacao-row__texto--com{
+      color: #2d2828;
+    }.secao-comparacao .comparacao-row__texto--sem{
+      color: #666666;
+    }.secao-comparacao .icon-check{
+      color: #4a9e6a;
+    }.secao-comparacao .icon-x{
+      color: #c0392b;
+    } 
+@media (min-width: 1024px){
       .comparacao-section {
         max-width:1120px !important;
         padding:88px 40px !important;
@@ -442,7 +606,386 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
     }.secao-prova-dados .prova-dados__inner{
       max-width: 1040px;
       margin: 0 auto;
-    }@media (max-width: 480px){
+    }.secao-prova-dados /* Header */
+    .prova-dados__header{
+      text-align: center;
+      margin-bottom: 56px;
+    }.secao-prova-dados .prova-dados__badge{
+      display: inline-block;
+      font-family: 'Dancing Script', cursive;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 22px;
+      color: #9C2E45;
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }.secao-prova-dados .prova-dados__badge::after{
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1.5px;
+      background-color: #9C2E45;
+      margin: 8px auto 0;
+      opacity: 0.5;
+    }.secao-prova-dados .prova-dados__titulo{
+      font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: clamp(30px, 4.5vw, 50px);
+      line-height: 1.15;
+      color: #2B1A1C;
+      margin-bottom: 20px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }.secao-prova-dados .prova-dados__titulo em{
+      font-style: italic;
+      color: #9C2E45;
+    }.secao-prova-dados .prova-dados__intro{
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #8A6F70;
+      max-width: 560px;
+      margin: 0 auto;
+    }.secao-prova-dados /* Grid */
+    .prova-dados__grid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }@media (max-width: 680px){
+      .prova-dados {
+        padding:64px 24px 56px !important;
+      }.secao-prova-dados .prova-dados__grid{
+        grid-template-columns:1fr !important;
+        gap:16px !important;
+      }.secao-prova-dados .prova-dados__titulo{
+        font-size:clamp(26px, 7vw, 36px) !important;
+      }
+    }@media (min-width: 1024px){
+      .prova-dados__inner {
+        max-width:1120px !important;
+      }.secao-prova-dados .prova-dados__grid{
+        grid-template-columns:repeat(4, 1fr) !important;
+        gap:28px !important;
+      }.secao-prova-dados .stat-card{
+        padding:32px 26px 26px !important;
+      }
+    }.secao-prova-dados /* Stat Card */
+    .stat-card{
+      background-color: #FFFFFF;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(60,20,25,0.08);
+      padding: 36px 32px 28px;
+      border-top: 3px solid #9C2E45;
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }.secao-prova-dados .stat-card:hover{
+      box-shadow: 0 16px 40px rgba(60,20,25,0.14);
+      transform: translateY(-3px);
+    }.secao-prova-dados .stat-card:nth-child(even){
+      border-top-color: #6E1F30;
+    }.secao-prova-dados .stat-card:nth-child(even) .stat-card__numero{
+      color: #6E1F30;
+    }.secao-prova-dados .stat-card__numero{
+      font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: clamp(48px, 6vw, 68px);
+      line-height: 1;
+      color: #9C2E45;
+      letter-spacing: -0.02em;
+    }.secao-prova-dados .stat-card__desc{
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #2B1A1C;
+      flex: 1;
+    }.secao-prova-dados .stat-card__fonte{
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #8A6F70;
+      opacity: 0.8;
+      margin-top: 4px;
+    }.secao-prova-dados /* Footnote */
+    .prova-dados__footnote{
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      color: #8A6F70;
+      opacity: 0.75;
+      letter-spacing: 0.02em;
+      margin-bottom: 56px;
+    }.secao-prova-dados .prova-dados__footnote::before{
+      content: '* ';
+    }.secao-prova-dados /* Depoimentos */
+    .prova-dados__depo-header{
+      text-align: center;
+      margin-bottom: 32px;
+    }.secao-prova-dados .prova-dados__depo-badge{
+      display: inline-block;
+      font-family: 'Dancing Script', cursive;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 22px;
+      color: #9C2E45;
+      letter-spacing: 0.04em;
+      position: relative;
+      padding-bottom: 10px;
+    }.secao-prova-dados .prova-dados__depo-badge::after{
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1.5px;
+      background-color: #9C2E45;
+      margin: 8px auto 0;
+      opacity: 0.5;
+    }.secao-prova-dados .depo-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }@media (max-width: 680px){
+      .depo-grid {
+        grid-template-columns:1fr !important;
+        gap:16px !important;
+      }
+    }@media (min-width: 1024px){
+      .depo-grid {
+        gap:28px !important;
+      }
+    }.secao-prova-dados .depo-card{
+      background-color: #FFFFFF;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(60,20,25,0.08);
+      padding: 16px 16px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }.secao-prova-dados .depo-card__print{
+      width: 100%;
+      max-width: 220px;
+      max-height: 340px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 14px;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 4px 14px rgba(60,20,25,0.10);
+    }@media (min-width: 1024px){
+      .depo-card__print {
+        max-width:200px !important;
+        max-height:310px !important;
+      }
+    }.secao-prova-dados .depo-card__autor{
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: #9C2E45;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+/* === secao-autoridade (autoridade-domine-a-amamentacao.html) === */
+.secao-autoridade *, .secao-autoridade *::before, .secao-autoridade *::after{ box-sizing: border-box; margin: 0; padding: 0; }.secao-autoridade .autoridade-secao{
+      background-color: #fdf0ee;
+      padding: 48px 0 64px;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }.secao-autoridade .autoridade-foto-wrapper{
+      margin: 0 16px 36px;
+    }.secao-autoridade .autoridade-foto{
+      display: block;
+      width: 100%;
+      aspect-ratio: 700 / 900;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+    }.secao-autoridade .autoridade-corpo{
+      padding: 0 20px;
+    }.secao-autoridade .autoridade-selo{
+      display: block;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 18px;
+      color: #c9706a;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }.secao-autoridade .autoridade-nome{
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: #1a1a1a;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }.secao-autoridade .autoridade-credencial{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      color: #888888;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      line-height: 1.5;
+      margin-bottom: 4px;
+    }.secao-autoridade .autoridade-credencial:last-of-type{
+      margin-bottom: 0;
+    }.secao-autoridade .autoridade-divider{
+      margin: 28px 0 0;
+    }.secao-autoridade .autoridade-bio p{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 400;
+      font-size: 16.5px;
+      color: #1a1a1a;
+      line-height: 1.72;
+      margin-bottom: 24px;
+    }.secao-autoridade .autoridade-bio p:last-child{
+      margin-bottom: 0;
+    }@media (min-width: 640px){
+      .autoridade-secao {
+        padding:64px 0 80px !important;
+      }.secao-autoridade .autoridade-foto-wrapper{
+        margin:0 auto 48px !important;
+        max-width:480px !important;
+      }.secao-autoridade .autoridade-corpo{
+        max-width:560px !important;
+        margin:0 auto !important;
+        padding:0 24px !important;
+      }.secao-autoridade .autoridade-nome{
+        font-size:42px !important;
+      }
+    }@media (min-width: 1024px){
+      .autoridade-secao {
+        display:grid !important;
+        grid-template-columns:400px 1fr !important;
+        align-items:center !important;
+        gap:64px !important;
+        max-width:1080px !important;
+        margin:0 auto !important;
+        padding:80px 40px !important;
+      }.secao-autoridade .autoridade-foto-wrapper{
+        margin:0 !important;
+        max-width:none !important;
+        width:100% !important;
+      }.secao-autoridade .autoridade-corpo{
+        max-width:none !important;
+        margin:0 !important;
+        padding:0 !important;
+      }.secao-autoridade .autoridade-nome{
+        font-size:46px !important;
+      }.secao-autoridade .autoridade-bio p{
+        font-size:17px !important;
+      }
+    }
+
+/* === secao-entregaveis (entregaveis-gerada-domine-a-amamentacao.html) === */
+.secao-entregaveis *, .secao-entregaveis *::before, .secao-entregaveis *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }.secao-entregaveis .entregaveis-section{
+      background-color: #FDF6F4;
+      padding: 72px 24px 80px;
+      font-family: 'Inter', sans-serif;
+    }.secao-entregaveis .entregaveis-inner{
+      max-width: 720px;
+      margin: 0 auto;
+    }.secao-entregaveis /* Badge / Selo acima do título */
+    .entregaveis-badge{
+      display: block;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-style: italic;
+      font-size: 22px;
+      font-weight: 400;
+      color: #9C2E45;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+    }.secao-entregaveis /* Título da seção */
+    .entregaveis-title{
+      font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 2.9rem);
+      font-weight: 600;
+      color: #2B1A1C;
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 48px;
+    }.secao-entregaveis .entregaveis-title em{
+      font-style: italic;
+      font-weight: 500;
+    }.secao-entregaveis /* Lista de cards */
+    .entregaveis-list{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      list-style: none;
+    }.secao-entregaveis /* Card individual */
+    .entregavel-card{
+      background-color: #FFFFFF;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(60, 20, 25, 0.08);
+      padding: 24px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }.secao-entregaveis .entregavel-card:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(60, 20, 25, 0.12);
+    }.secao-entregaveis /* Círculo do ícone */
+    .entregavel-icon-wrap{
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: #F5DEE2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }.secao-entregaveis .entregavel-icon-wrap svg{
+      width: 26px;
+      height: 26px;
+    }.secao-entregaveis /* Conteúdo textual do card */
+    .entregavel-body{
+      flex: 1;
+      min-width: 0;
+    }.secao-entregaveis .entregavel-card-title{
+      font-family: 'Inter', sans-serif;
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: #2B1A1C;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }.secao-entregaveis .entregavel-card-desc{
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 400;
+      color: #8A6F70;
+      line-height: 1.6;
+    }.secao-entregaveis /* Tag de bônus */
+    .entregavel-tag{
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #9C2E45;
+      background-color: #F5DEE2;
+      border-radius: 999px;
+      padding: 3px 10px;
+      margin-bottom: 6px;
+    } 
+@media (max-width: 480px){
       .entregaveis-section {
         padding:56px 16px 64px !important;
       }.secao-entregaveis .entregavel-card{
@@ -459,7 +1002,8 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       }.secao-entregaveis .entregavel-card-desc{
         font-size:0.84rem !important;
       }
-    }@media (min-width: 1024px){
+    } 
+@media (min-width: 1024px){
       .entregaveis-inner {
         max-width:960px !important;
       }.secao-entregaveis .entregaveis-list{
