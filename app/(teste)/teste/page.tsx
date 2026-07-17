@@ -664,15 +664,15 @@ export default function TestPage() {
       <div class="depo-grid" role="list">
 
         <article class="depo-card" role="listitem">
-          <img class="depo-card__print" src="https://placehold.co/400x600/FFF8F7/A52B52?text=Depoimento+Bruna" alt="Print de conversa de WhatsApp de Bruna, mãe da Georgia, agradecendo o acompanhamento da Dra. Lorena e contando que ele a ajudou a não desistir de amamentar nos primeiros meses.">
+          <img class="depo-card__print" src="/brunadep.jpg" alt="Print de conversa de WhatsApp de Bruna, mãe da Georgia, agradecendo o acompanhamento da Dra. Lorena e contando que ele a ajudou a não desistir de amamentar nos primeiros meses.">
         </article>
 
         <article class="depo-card" role="listitem">
-          <img class="depo-card__print" src="https://placehold.co/400x600/FFF8F7/A52B52?text=Depoimento+Maria+Augusta" alt="Print de conversa de WhatsApp de Maria Augusta agradecendo a disponibilidade, o acolhimento e o carinho da Dra. Lorena desde o primeiro contato.">
+          <img class="depo-card__print" src="/mariadep1.jpg" alt="Print de conversa de WhatsApp de Maria Augusta agradecendo a disponibilidade, o acolhimento e o carinho da Dra. Lorena desde o primeiro contato.">
         </article>
 
         <article class="depo-card" role="listitem">
-          <img class="depo-card__print" src="https://placehold.co/400x600/FFF8F7/A52B52?text=Depoimento+Maria+Augusta+2" alt="Print de conversa de WhatsApp de Maria Augusta agradecendo o cuidado com os filhos e dizendo que sua maternidade é mais leve por poder contar com a Dra. Lorena.">
+          <img class="depo-card__print" src="/mariadep2.jpg" alt="Print de conversa de WhatsApp de Maria Augusta agradecendo o cuidado com os filhos e dizendo que sua maternidade é mais leve por poder contar com a Dra. Lorena.">
         </article>
 
       </div>
