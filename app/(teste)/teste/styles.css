@@ -120,38 +120,40 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
     } 
 @media (min-width: 1024px){
       .hero-section {
-        max-width:1200px !important;
-        display:grid !important;
-        grid-template-columns:1fr 1fr !important;
-        align-items:stretch !important;
+        max-width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
       }.secao-hero .hero-photo-wrapper{
-        height:auto !important;
-        min-height:100% !important;
+        height: 60vh !important;
+        min-height: 450px !important;
       }.secao-hero .hero-content{
-        display:flex !important;
-        flex-direction:column !important;
-        justify-content:center !important;
-        align-items:flex-start !important;
-        text-align:left !important;
-        padding:64px 64px 64px 56px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 64px 24px 72px !important;
       }.secao-hero .hero-badge{
-        max-width:480px !important;
-        margin-left:0 !important;
-        margin-right:0 !important;
-        text-align:left !important;
+        max-width: 640px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 36px !important;
+        text-align: center !important;
       }.secao-hero .hero-badge-text{
-        text-align:left !important;
+        text-align: center !important;
       }.secao-hero .hero-headline{
-        font-size:clamp(48px, 3.6vw, 64px) !important;
-        max-width:560px !important;
-        margin-left:0 !important;
-        margin-right:0 !important;
-        text-align:left !important;
+        font-size: clamp(40px, 4vw, 52px) !important;
+        max-width: 720px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
       }.secao-hero .hero-sub{
-        max-width:500px !important;
-        margin-left:0 !important;
-        margin-right:0 !important;
-        text-align:left !important;
+        max-width: 640px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+      }.secao-hero .hero-logo-img{
+        width: 110px !important;
       }
     }
 
