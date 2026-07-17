@@ -40,13 +40,13 @@ export default function TestPage() {
   <div class="hero-photo-wrapper">
     <img
       class="hero-photo"
-      src="assets/foto-hero-mae-bebe.jpg"
+      src="/foto1.webp"
       alt="Mãe sorrindo segurando bebê recém-nascido"
     >
 
     <!-- Logo Domine a Amamentação -->
     <div class="hero-logo" role="img" aria-label="Domine a Amamentação">
-      <img class="hero-logo-img" src="assets/logomarca-domine.png" alt="Domine a Amamentação">
+      <img class="hero-logo-img" src="/logo-branco.webp" alt="Domine a Amamentação">
     </div>
   </div>
 
@@ -686,7 +686,7 @@ export default function TestPage() {
     <div class="autoridade-foto-wrapper">
       <img
         class="autoridade-foto"
-        src="assets/foto-perfil-lorena.jpg"
+        src="/foto2.webp"
         alt="Foto da Dra. Lorena Caramaschi, médica pediatra"
         width="700"
         height="900"
