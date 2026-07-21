@@ -609,6 +609,17 @@ export default function TestPage() {
       </div>
 
     </div>
+
+    <!-- Novo Botão QUERO AMAMENTAR SEM DOR -->
+    <div class="modulos-cta-wrapper">
+      <a href="https://pay.hotmart.com/C56596063W?checkoutMode=10&bid=1784245155404" class="modulos-cta-btn" aria-label="Quero amamentar sem dor">
+        <svg class="modulos-cta-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        QUERO AMAMENTAR SEM DOR
+      </a>
+    </div>
+
   </section>
 </div>
 
@@ -839,7 +850,7 @@ export default function TestPage() {
           </svg>
         </span>
         <span class="oferta-item-nome">Bônus: A mãe que amamenta (PDF)</span>
-        <span class="oferta-item-preco">R$ 39</span>
+        <span class="oferta-item-preco">R$ 19</span>
       </li>
 
       <li class="oferta-stack-item">
@@ -855,16 +866,16 @@ export default function TestPage() {
 
     <div class="oferta-total-row" aria-label="Total dos itens sem desconto">
       <span class="oferta-total-label">Total dos itens</span>
-      <span class="oferta-total-valor" aria-label="De R$ 384">R$ 384</span>
+      <span class="oferta-total-valor" aria-label="De R$ 364">R$ 364</span>
     </div>
 
     <div class="oferta-preco-bloco">
-      <p class="oferta-de-por">De R$ 384 por apenas</p>
+      <p class="oferta-de-por">De R$ 364 por apenas</p>
       <div class="oferta-preco-linha">
-        <span class="oferta-preco-valor" aria-label="97 reais">R$ 97</span>
+        <span class="oferta-preco-valor" aria-label="77 reais">R$ 77</span>
         <span class="oferta-preco-avista">à vista</span>
       </div>
-      <p class="oferta-parcelamento">ou em até 12x de R$ 10,03</p>
+      <p class="oferta-parcelamento">ou em até 10x de R$ 9,25</p>
     </div>
 
     <hr class="oferta-divisor-cta" aria-hidden="true">

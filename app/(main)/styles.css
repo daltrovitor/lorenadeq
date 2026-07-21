@@ -221,7 +221,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       width: 100%;
       max-width: 380px;
       margin: 0 auto 16px;
-      background: #8B2642;
+      background: #198754;
       color: #ffffff;
       border: none;
       border-radius: 50px;
@@ -241,7 +241,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       fill: #ffffff;
       flex-shrink: 0;
     }.secao-hero-cta .hero-cta__button:hover{
-      background: #7a2039;
+      background: #157347;
     }.secao-hero-cta .hero-cta__badges{
       text-align: center;
       font-family: 'Inter', sans-serif;
@@ -1163,7 +1163,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       justify-content: center;
       gap: 10px;
       width: 100%;
-      background: #8b2d3e;
+      background: #198754;
       color: #ffffff;
       border: none;
       border-radius: 30px;
@@ -1177,7 +1177,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       text-decoration: none;
       margin-bottom: 14px;
     }.secao-oferta .oferta-botao:hover{
-      background: #7a2333;
+      background: #157347;
     }.secao-oferta .oferta-botao-icone{
       font-size: 16px;
       line-height: 1;
@@ -1393,7 +1393,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       align-items: center;
       justify-content: center;
       gap: 12px;
-      background-color: #8b2635;
+      background-color: #198754;
       color: #ffffff;
       text-decoration: none;
       font-family: 'Inter', system-ui, sans-serif;
@@ -1404,16 +1404,16 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
       line-height: 1.2;
       padding: 20px 40px;
       border-radius: 50px;
-      box-shadow: 0 4px 16px rgba(139, 38, 53, 0.30);
+      box-shadow: 0 4px 16px rgba(25, 135, 84, 0.30);
       transition: background-color 200ms ease, box-shadow 200ms ease;
       width: 100%;
       max-width: 520px;
       text-align: center;
     }.secao-faq .faq-cta-btn:hover{
-      background-color: #7a1f2c;
-      box-shadow: 0 6px 22px rgba(139, 38, 53, 0.38);
+      background-color: #157347;
+      box-shadow: 0 6px 22px rgba(25, 135, 84, 0.38);
     }.secao-faq .faq-cta-btn:focus-visible{
-      outline: 3px solid #9e3347;
+      outline: 3px solid #198754;
       outline-offset: 3px;
     }.secao-faq .faq-cta-icon{
       flex-shrink: 0;
@@ -1506,5 +1506,55 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
         font-size:12px !important;
       }.secao-footer .footer-copyright{
         font-size:13px !important;
+      }
+    }
+
+    /* === Estilos para o botão da seção de módulos === */
+    .secao-modulos .modulos-cta-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 36px;
+      padding: 0 20px;
+    }
+    .secao-modulos .modulos-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background-color: #198754;
+      color: #ffffff;
+      text-decoration: none;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.2;
+      padding: 20px 40px;
+      border-radius: 50px;
+      box-shadow: 0 4px 16px rgba(25, 135, 84, 0.30);
+      transition: background-color 200ms ease, box-shadow 200ms ease;
+      width: 100%;
+      max-width: 520px;
+      text-align: center;
+    }
+    .secao-modulos .modulos-cta-btn:hover {
+      background-color: #157347;
+      box-shadow: 0 6px 22px rgba(25, 135, 84, 0.38);
+    }
+    .secao-modulos .modulos-cta-btn:focus-visible {
+      outline: 3px solid #198754;
+      outline-offset: 3px;
+    }
+    .secao-modulos .modulos-cta-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      fill: #ffffff;
+    }
+    @media (max-width: 480px) {
+      .secao-modulos .modulos-cta-btn {
+        font-size: 14px !important;
+        padding: 18px 28px !important;
       }
     }
