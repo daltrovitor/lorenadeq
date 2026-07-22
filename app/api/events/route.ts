@@ -4,14 +4,21 @@ import { sendMetaCapiEvent, hashValue, hashPhone } from '@/lib/meta-capi';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { event, email, phone, name, externalId } = body;
+    const { event, email, phone, name, externalId, eventId } = body;
 
     if (event !== 'ViewContent' && event !== 'InitiateCheckout') {
       return NextResponse.json({ error: 'Invalid event type' }, { status: 400 });
     }
 
-    // Get client details from headers
-    const ip = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || '127.0.0.1';
+    // Get client details from headers properly handling IPv6 and proxies
+    const rawIp = 
+      request.headers.get('cf-connecting-ip') || 
+      request.headers.get('x-forwarded-for') || 
+      request.headers.get('x-real-ip') || 
+      '127.0.0.1';
+    
+    // x-forwarded-for may be a comma-separated list of IPs; extract the real client IP
+    const ip = rawIp.split(',')[0].trim();
     const userAgent = request.headers.get('user-agent') || '';
     
     // Extract Meta Pixel specific cookies if available
@@ -51,6 +58,7 @@ export async function POST(request: NextRequest) {
         value: 247.00,
       },
       actionSource: 'website',
+      eventId: eventId || undefined,
     });
 
     return NextResponse.json({ success: result.success });
